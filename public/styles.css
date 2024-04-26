@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dark-header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    color: #ccc;
+  }
+  /* Existing styles */
+  
+  .hero {
+    background-color: #222;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #230708;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #f57c00;
+  }
+  /* Existing styles */
+  
+  .featured-artworks {
+    background-color: #222;
+    color: #080808;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .featured-artworks h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .artwork {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .artwork img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .artwork h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .artwork p {
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .view-more-button {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 40px;
+    transition: background-color 0.3s;
+  }
+  
+  .view-more-button:hover {
+    background-color: #f57c00;
+  }
+  /* Existing styles */
+  
+  .contact-section {
+    background-color: #222;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-info {
+    margin-bottom: 40px;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+  }
+  
+  .contact-form button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #020202;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('welcome.jpg'); /* Replace 'background-image.jpg' with your image path */
+    background-size: cover;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px 20px; /* Increased padding */
+    margin-top: 20px; /* Increased margin */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Increased font size */
+    transition: background-color 0.3s; /* Added transition effect */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  p {
+    margin-top: 20px; /* Increased margin */
+    font-size: 14px; /* Adjusted font size */
+  }
+  
+  a {
+    color: #4CAF50; /* Changed link color */
+  }
+  
+  

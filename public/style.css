@@ -1,0 +1,182 @@
+/* Styles for header */
+header {
+    background-color: #000000;
+    color: #0c0a0a;
+    padding: 10px 20px;
+    text-align: center;
+    color: #f5eeee;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #f0ecec;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Styles for hero section */
+  /* Styles for hero section */
+  .hero {
+    background-image: url('image.jpg');
+    background-size: cover; /* Adjust background size to cover the entire container */
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f5eeee;
+    position: relative;
+  }
+  
+  /* Add an overlay to darken the background image */
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Styles for featured artworks section */
+  .featured-artworks {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  /* Styles for footer */
+  footer {
+    background-color: #0b0b0b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    z-index: 1; /* Ensure text appears above overlay */
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    z-index: 1; /* Ensure text appears above overlay */
+  }
+  
+  .cta-btn {
+    background-color: #070707;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    z-index: 1; /* Ensure button appears above overlay */
+  }
+  
+  .cta-btn:hover {
+    background-color: #f1efed;
+  }
+  
+  /* Styles for featured artworks section */
+  .featured-artworks {
+    padding: 50px 20px;
+    text-align: center;
+    background-image: url('featured.jpg'); /* Add background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  
+  .artwork-card {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #030303;
+    box-shadow: 0 0 10px rgba(2, 2, 2, 0.1);
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .artwork-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Styles for footer */
+  footer {
+    background-color: #090909;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .about-section {
+    background-size: cover;
+    background-position: center;
+    color: #090606;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  /* Styles for contact section */
+  .contact-section {
+    background-image: url('contact.jpg'); /* Add background image */
+    background-color: #111; /* Fallback background color */
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .contact-section p {
+    margin-bottom: 10px; /* Adjust spacing between paragraphs */
+  }
+  
+  /* Styles for view section */
+  .view-section {
+    background-color: #070707;
+    padding: 150px 20px; /* Increase the padding to increase height */
+    text-align: center;
+    height: 600px; /* Alternatively, you can specify a fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #f5eeee;
+  }
+  
+  .view-section button {
+    background-color: #0c0c0c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px; /* Adjust margin between buttons */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #f5eeee;
+  }
+  
+  .view-section button:hover {
+    background-color: #090909;
+    color: #f5eeee;
+  }
+  

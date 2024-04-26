@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Art Gallery</title>
+  <link rel="stylesheet" type="text/css" href="/public/style.css">
+  <style>
+    /* Styles for header */
+    header {
+      background-color: #000000;
+      color: #0c0a0a;
+      padding: 10px 20px;
+      text-align: center;
+      color: #f5eeee;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    
+    nav ul li a {
+      color: #f0ecec;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    /* Styles for hero section */
+    .hero {
+      background-image: url('image.jpg');
+      background-size: cover; /* Adjust background size to cover the entire container */
+      background-position: center;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #f5eeee;
+      position: relative;
+    }
+    
+    /* Add an overlay to darken the background image */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Styles for featured artworks section */
+    .featured-artworks {
+      padding: 50px 20px;
+      text-align: center;
+      background-image: url('featured.jpg'); /* Add background image */
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+    
+    .artwork-card {
+      display: inline-block;
+      width: 300px;
+      margin: 20px;
+      padding: 20px;
+      background-color: #030303;
+      box-shadow: 0 0 10px rgba(2, 2, 2, 0.1);
+      border-radius: 5px;
+      text-align: left;
+    }
+    
+    .artwork-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    
+    /* Styles for footer */
+    footer {
+      background-color: #090909;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      z-index: 1; /* Ensure text appears above overlay */
+    }
+    
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      z-index: 1; /* Ensure text appears above overlay */
+    }
+    
+    .cta-btn {
+      background-color: #070707;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      z-index: 1; /* Ensure button appears above overlay */
+    }
+    
+    .cta-btn:hover {
+      background-color: #f1efed;
+    }
+    
+    /* Styles for footer */
+    footer {
+      background-color: #090909;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    
+    .about-section {
+      background-size: cover;
+      background-position: center;
+      color: #090606;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    
+    /* Styles for contact section */
+    .contact-section {
+      background-image: url('contact.jpg'); /* Add background image */
+      background-color: #111; /* Fallback background color */
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    
+    .contact-section p {
+      margin-bottom: 10px; /* Adjust spacing between paragraphs */
+    }
+    
+    /* Styles for view section */
+    .view-section {
+      background-color: #070707;
+      padding: 150px 20px; /* Increase the padding to increase height */
+      text-align: center;
+      height: 600px; /* Alternatively, you can specify a fixed height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #f5eeee;
+    }
+    
+    .view-section button {
+      background-color: #0c0c0c;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin: 10px; /* Adjust margin between buttons */
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      color: #f5eeee;
+    }
+    
+    .view-section button:hover {
+      background-color: #090909;
+      color: #f5eeee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Virtual Art Gallery</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#view">View</a></li>
+        <li id="authButton"></li> <!-- Placeholder for Sign In/Register button -->
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to Our Virtual Art Gallery</h1>
+    <p>Explore and experience the world of art from the comfort of your home.</p>
+    <a href="#featured" class="cta-btn">View Featured Artworks</a>
+  </section>
+
+  <section id="featured" class="featured-artworks">
+    <h2>Featured Artworks</h2>
+    <div class="artwork-card">
+      <img src="artwork1.jpg" alt="Artwork 1">
+    </div>
+    <div class="artwork-card">
+      <img src="artwork2.jpg" alt="Artwork 2">
+    </div>
+    <!-- Add more artwork cards as needed -->
+  </section>
+
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>We redefine art viewing by bringing physical gaps with our digital platforms. Artists globally showcase their creativity while enthusiasts explore diverse expressions that inspire innovation. Committed to fostering connection and inspiration, our virtual sanctuary invites you to immerse in boundless creativity and exploration.</p>
+  </section>
+
+  <section id="view" class="view-section">
+    <div class="image-container">
+      <img src="limage.jpg" alt="Left Image">
+    </div>
+    <div class="content">
+      <h2>View</h2>
+      <button onclick="window.location.href='create_exhibition.html'">Create Your Own Exhibition</button>
+      <button onclick="window.location.href='art_lover.html'">Are You an Art Lover?</button>
+      <div style="margin-top: 20px;">
+        <button style="font-size: 1.5em; padding: 10px 20px;" onclick="window.location.href='auction.html'">Auction</button>
+    </div>
+  </section>  
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Contact: 123-456-7890</p> <!-- Add contact number here -->
+    <p>Email: info@virtualartgallery.com</p> <!-- Add email here -->
+    <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> <!-- Add details here -->
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2024 Virtual Art Gallery. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Check if user is signed in or not
+    const userSignedIn = false; // Change this to true if user is signed in
+
+    // Function to handle Sign In/Register button click
+    function handleSignInRegister() {
+      if (userSignedIn) {
+        // Redirect to appropriate page if user is signed in
+        window.location.href = 'signin.html';
+      } else {
+        // Display buttons for user type selection
+        const authButton = document.getElementById('authButton');
+        authButton.innerHTML = `
+          <button onclick="window.location.href='/signup'">Sign in/Register as Customer</button>
+          <button onclick="window.location.href='reg_admin'">Sign in/Register as Admin</button>
+        `;
+      }
+    }
+
+    // Render Sign In/Register button
+    const authButton = document.getElementById('authButton');
+    authButton.innerHTML = '<button onclick="handleSignInRegister()">Sign In/Register</button>';
+
+    // Function to place a bid
+    function placeBid() {
+      const bidAmount = document.getElementById('bidAmount').value;
+      const currentBidElement = document.getElementById('currentBid');
+      
+      // Get current artwork price
+      const currentPrice = parseFloat(document.getElementById('currentPrice').innerText.replace('$', ''));
+
+      // Validate bid amount
+      if (!bidAmount || isNaN(bidAmount) || bidAmount <= currentPrice) {
+          alert('Bid amount must be greater than current price range of artwork.');
+          return;
+      }
+
+      // Update current bid
+      currentBidElement.textContent = `Current Bid: $${bidAmount}`;
+    }
+  </script>
+</body>
+</html>
